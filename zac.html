@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,900' rel='stylesheet' type='text/css'>
+  <style>
+    body{
+      background: url(/zac/img/bg.jpg);
+      background-size: 100%;
+      padding: none;
+      margin: none;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .mast{
+      background: transparent url(/zac/img/mast.png) no-repeat;
+      min-height: 680px;
+    }
+    .root {
+      min-width: 320px;
+      max-width: 1020px;
+
+      margin: 0 auto;
+    }
+    .root .article.first{
+      margin-top: -18em;
+    }
+    .root .article{
+      color: #ecdaf4;
+    text-shadow: 1px 1px 8px rgba(69, 34, 34, 1);
+      background: rgba(77,24,25,0.55) url(/zac/img/plate-bg.png);
+      box-sizing: border-box;
+      margin-top: 0em;
+      box-shadow: inset 0px 3px 246px 65px rgba(13,3,2,0.3);
+    }
+    /* snippit content */
+    .root .article .content{
+      padding: 1em 2em 3em 2em;
+      box-sizing: border-box;
+      display:block;
+      line-height: 2em;
+      width:100%;
+      min-height: 300px;
+    }
+    /* snippet "hash tag" or title */
+    .root .article .title{
+      width:100%;
+      display: block;
+      box-sizing: border-box;
+      padding: 1em 0em 1em 0em;
+      text-indent: 1.67em;
+      font-size: 1.4em;
+      color: black;
+      font-weight: 600;
+      background: white url(/zac/img/headline-bg.jpg);
+    }
+
+    button{
+      background: white url(/zac/img/headline-bg.jpg);
+      font-size:3em;
+      color: #ad0b0a;
+      font-weight: bold;
+    }
+    button.toggle-nav{
+      border-color: #ad0b0a;
+      position: absolute;
+      left:0;
+      cursor:pointer;
+      top:0;
+    }
+
+    .navigation{
+      position: absolute;
+      left:0;
+      top: 5em;
+      background: white;
+      min-width: 360px;
+    }
+    .animation{
+    }
+    .animation .saw{
+      background: url(/zac/img/saw.png) no-repeat;
+      width: 510px;
+      height: 510px;
+    }
+
+    .saw{
+      animation-name: spin;
+     animation-duration: 3200ms;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+
+       position: fixed;
+    }
+    .saw.one{
+      left: -111px;
+      bottom: -161px;
+    }
+
+    @keyframes spin {
+      from {transform:rotate(0deg);}
+      to {transform:rotate(360deg);}
+  }
+  </style>
+</head>
+<body>
+<div class="root">
+  <div class="animation">
+    <div class="saw one"></div>
+  </div>
+  <!--
+
+  <button class="toggle-nav">Toggle Navigation</button>
+  <div class="navigation">
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>tree</li>
+      <li>four</li>
+      <li>five</li>
+  </div>
+-->
+  <div class="mast"></div>
+  <div class="article first">
+    <div class="title">A hashy Title</div>
+    <div class="content">
+      asofjaw iowj awwao ij 92  fj2 jasdff asfsfa e ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
+      asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
+      asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="title">A hashy Title</div>
+    <div class="content">
+      asofjaw iowj awwao ij 92  fj2 jasdff asfsfa e ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
+      asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
+      asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
+    </div>
+  </div>
+</div>
+</body>
+</html>
