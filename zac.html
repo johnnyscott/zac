@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,900' rel='stylesheet' type='text/css'>
   <style>
     body{
@@ -12,19 +13,19 @@
     }
 
     .mast{
-      background: transparent url(/zac/img/mast.png) no-repeat;
-      min-height: 680px;
+      width: 100%;
     }
     .root {
-      min-width: 320px;
+
       max-width: 1020px;
 
       margin: 0 auto;
     }
     .root .article.first{
-      margin-top: -18em;
     }
     .root .article{
+      position: relative;
+      z-index:555;
       color: #ecdaf4;
       text-shadow: 1px 1px 8px rgba(69, 34, 34, 1);
       background: rgba(77,24,25,0.55) url(/zac/img/plate-bg.png);
@@ -56,10 +57,11 @@
 
 
     .navigation{
+      z-index: 666666;
       position: fixed;
       display:none;
       left:0;
-      bottom: 5em;
+      bottom: 2em;
       background: white url(/zac/img/nav-bg.jpg);
       min-width: 360px;
       font-size:1.67em;
@@ -69,12 +71,13 @@
     .animation{
     }
     .animation .saw{
-      background: url(/zac/img/saw-two.png) no-repeat;
-      width: 319px;
-      height: 319px;
+      background: url(/zac/img/saw-three.png) no-repeat;
+      width: 138px;
+      height: 138px;
     }
 
     .saw{
+      z-index: 3333;
       animation-name: spin;
      animation-duration: 3200ms;
      animation-iteration-count: infinite;
@@ -83,13 +86,28 @@
        position: fixed;
     }
     .saw.one{
-      left: -111px;
-      bottom: -161px;
+      left: -33px;
+      bottom: -33px;
     }
 
     @keyframes spin {
       from {transform:rotate(0deg);}
       to {transform:rotate(360deg);}
+  }
+
+  a.button{
+    background:red url(/zac/img/button-bg.jpg);
+    background-size: 100%;
+    font-size: 1.68em;
+    color: yellow;
+    font-weight:bold;
+    border-color: red;
+    padding: 0;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+    padding: 1em 2em 1em 2em;
+    text-align: center;
   }
   </style>
 </head>
@@ -108,7 +126,12 @@
       <li>five</li>
   </div>
 
-  <div class="mast"></div>
+
+  <img class="mast" src="/zac/img/mast.png">
+
+
+    <a class="button call" href="tel:319-555-1234">Call Us @<br> 319-555-1234</A>
+
   <div class="article first">
     <div class="title">A hashy Title</div>
     <div class="content">
@@ -126,6 +149,9 @@
       asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
     </div>
   </div>
+
+
+      <a class="button call" href="tel:319-555-1234">Call Us @ 319-555-1234</A>
 </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
   $('.saw').click(function navToggle(){
