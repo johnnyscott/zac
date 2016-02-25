@@ -61,7 +61,7 @@
       position: fixed;
       display:none;
       left:0;
-      bottom: 2em;
+      bottom: 2.2em;
       background: white url(/zac/img/nav-bg.jpg);
       min-width: 360px;
       font-size:1.67em;
@@ -109,6 +109,18 @@
     padding: 1em 2em 1em 2em;
     text-align: center;
   }
+
+  .footer{
+    height: 5em;
+    text-align:center;
+    margin-top:1.67em;
+    font-size: 1em;
+    color: yellow;
+  }
+
+  .navigation a{
+    color:red;
+  }
   </style>
 </head>
 <body>
@@ -119,21 +131,20 @@
 
   <div class="navigation">
     <ul>
-      <li>one</li>
-      <li>two</li>
-      <li>tree</li>
-      <li>four</li>
-      <li>five</li>
+      <li><a href="#one">one</a></li>
+      <li><a href="#two">two</a></li>
+      <li><a href="#three">three</a></li>
   </div>
 
 
   <img class="mast" src="/zac/img/mast.png">
 
 
-    <a class="button call" href="tel:319-555-1234">Call Us @<br> 319-555-1234</A>
+    <a class="button call" href="tel:319-555-1234">Call Us @ 319-555-1234</A>
 
   <div class="article first">
-    <div class="title">A hashy Title</div>
+    <a name="one"></a>
+    <div class="title">Screen One - 1</div>
     <div class="content">
       asofjaw iowj awwao ij 92  fj2 jasdff asfsfa e ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
       asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
@@ -142,7 +153,9 @@
   </div>
 
   <div class="article">
-    <div class="title">A hashy Title</div>
+
+      <a name="two"></a>
+    <div class="title">Screen Two - 2</div>
     <div class="content">
       asofjaw iowj awwao ij 92  fj2 jasdff asfsfa e ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
       asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
@@ -150,8 +163,19 @@
     </div>
   </div>
 
+  <div class="article">
 
-      <a class="button call" href="tel:319-555-1234">Call Us @ 319-555-1234</A>
+      <a name="three"></a>
+    <div class="title">Screen Three - 3</div>
+    <div class="content">
+      asofjaw iowj awwao ij 92  fj2 jasdff asfsfa e ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
+      asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
+      asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
+    </div>
+  </div>
+      <a class="button call" href="tel:319-555-1234">Call Us @<br> 319-555-1234</A>
+
+  <div class="footer">Copyright Zac Wulner All rights reserved.</div>
 </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
   $('.saw').click(function navToggle(){
@@ -161,6 +185,10 @@
       $('.navigation').show();
     }
   });
+
+$('.navigation a').click(function closeNav(){
+  $('.navigation').hide();
+});
 </script>
 </body>
 </html>
