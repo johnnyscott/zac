@@ -26,7 +26,7 @@
     }
     .root .article{
       color: #ecdaf4;
-    text-shadow: 1px 1px 8px rgba(69, 34, 34, 1);
+      text-shadow: 1px 1px 8px rgba(69, 34, 34, 1);
       background: rgba(77,24,25,0.55) url(/zac/img/plate-bg.png);
       box-sizing: border-box;
       margin-top: 0em;
@@ -54,33 +54,24 @@
       background: white url(/zac/img/headline-bg.jpg);
     }
 
-    button{
-      background: white url(/zac/img/headline-bg.jpg);
-      font-size:3em;
-      color: #ad0b0a;
-      font-weight: bold;
-    }
-    button.toggle-nav{
-      border-color: #ad0b0a;
-      position: absolute;
-      left:0;
-      cursor:pointer;
-      top:0;
-    }
 
     .navigation{
-      position: absolute;
+      position: fixed;
+      display:none;
       left:0;
-      top: 5em;
-      background: white;
+      bottom: 5em;
+      background: white url(/zac/img/nav-bg.jpg);
       min-width: 360px;
+      font-size:1.67em;
+      color: #940001;
+      text-shadow: 1px 1px 8px rgba(255, 255, 255, 1);
     }
     .animation{
     }
     .animation .saw{
-      background: url(/zac/img/saw.png) no-repeat;
-      width: 510px;
-      height: 510px;
+      background: url(/zac/img/saw-two.png) no-repeat;
+      width: 319px;
+      height: 319px;
     }
 
     .saw{
@@ -107,9 +98,7 @@
   <div class="animation">
     <div class="saw one"></div>
   </div>
-  <!--
 
-  <button class="toggle-nav">Toggle Navigation</button>
   <div class="navigation">
     <ul>
       <li>one</li>
@@ -118,7 +107,7 @@
       <li>four</li>
       <li>five</li>
   </div>
--->
+
   <div class="mast"></div>
   <div class="article first">
     <div class="title">A hashy Title</div>
@@ -137,6 +126,15 @@
       asofjaw iowj awwao ij 92  fj2 joias jfojao jwae ojaw fj2 j2f389jf8f 2j23fj j j2 jf2 9joi jf f2j2fj0 f 2j23 0j jf2 0jf 3j22jiofjo 2  2ofoij f j2jjf 23oisj iw eoi ojaioj weioj owie
     </div>
   </div>
-</div>
+</div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+  $('.saw').click(function navToggle(){
+    if($('.navigation').is(':visible')){
+      $('.navigation').hide();
+    }else{
+      $('.navigation').show();
+    }
+  });
+</script>
 </body>
 </html>
